@@ -1,0 +1,127 @@
+/*
+Color:
+    #FAD9FF
+    #EBAEDE
+    #FFBAD2
+    #E8A09E
+    #FFDFD9
+*/
+
+.dos{
+    padding: 10vh 0 10vh 0 ;
+    margin: auto;
+    text-align:center
+}
+
+ul.slider{
+    
+    height:375px; width:512px;
+    margin:0 auto;
+    padding:0;
+    position:relative;
+    list-style-type:none;
+    overflow:hidden;
+    border: 2px solid rgb(252, 67, 0);
+    
+}
+    
+ul.slider:before{
+    
+    /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss_content_list-bullets*/
+    
+    content:'';
+    
+    background:transparent url(/im/play.png) no-repeat scroll right bottom;
+    
+    height:30px; width:100%;
+    
+    position:absolute;
+    
+    left:0;
+    
+    bottom:0;
+    
+    z-index:1;
+    
+}
+    
+ul.slider:hover:before{
+    
+    display:none;
+    
+}
+    
+ul.slider li{
+    
+    height:100%; width:100%;
+    
+    position:absolute;
+    
+    top:0;
+    
+    left:0;
+    
+    opacity: 1;
+    
+    background:#000;
+    
+}
+    
+ul.slider li:after{
+    
+    content:'';
+    
+    height:10px; width:0;
+    
+    position:absolute;
+    
+    bottom:0;
+    
+    left:0;
+    
+    -moz-transition: width 5s linear;
+    
+    -webkit-transition: width 5s linear;
+    
+    -o-transition: width 5s linear;
+    
+    transition: width 5s linear;
+    
+}
+    
+ul.slider li:hover:after{
+    
+    width:100%;
+    
+    background:#000;
+    
+}
+    
+ul.slider li:hover~li, ul.slider li:hover~li:after{
+    
+    display:none;
+    
+    z-index:-1;
+    
+}
+    
+ul.slider li:hover{
+    
+    margin:100px;
+    
+    opacity: 0;
+    
+    -moz-transition: margin .1s linear 5s, opacity 1s linear 4s ;
+    
+    -webkit-transition: margin .1s linear 5s, opacity 1s linear 4s ;
+    
+    -o-transition: margin .1s linear 5s, opacity 1s linear 4s ;
+    
+    transition: margin .1s linear 5s, opacity 1s linear 4s ;
+    
+}
+    
+ul.slider li img{
+    
+    display:block;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/3a0d4af02e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link rel="stylesheet" href="style/footer.css" />
+    <script src="js/app.js"></script>
+    <title>Sargent</title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <label class="logo"><img src="img/logo.png"> Sargent</label>
+
+        <ul class="active">
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="bio.html">BIOGRAPHY</a></li>
+            <li><a href="technique.html">TECHNIQUES</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+
+      </nav>
+      <section id="nav-img"></section>
+    </header>
+
+    <h1>CONTACT US</h1>
+
+    <h2>sargent@artmail.com</h2>
+
+    <form action="guardar.php" method="post" id="contact-form" runat="server" enctype="multipart/form-data">
+
+        <h2>subscribe to our newsletter</h2>
+        
+        <label for="nombre">Name</label>
+        <input type="text" id="nombre" name="nombre" maxlength="30" required><br>
+
+        <label for="apellidos">Surname</label>
+        <input type="text" id="apellidos" name="apellidos" maxlength="60" required><br>
+
+        <label for="calle">Email</label>
+        <input type="text" id="calle" name="calle" maxlength="60" required><br>
+
+        <button class="submit" type="submit">Send</button>
+    </form>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>shop</h4>
+          <ul>
+            <li><a href="#">cart</a></li>
+            <li><a href="#">latest paintings</a></li>
+            <li><a href="#">other products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><p>© Mar Rodríguez 2022</p>
+ </footer>
+
+  </body>
+</html>
